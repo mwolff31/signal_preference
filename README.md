@@ -1,6 +1,6 @@
 # Signal Strength Drives Feature Preference in CNN Image Classifiers
 
-This repository contains code to run experiments in the paper "Feature Signal Drives Feature Preference in CNN Image Classifiers." There are three subdirectories in this repository, the contents of which are described below. This code was tested using PyTorch 1.7.
+This repository contains code to run experiments in the paper "Feature Signal Drives Feature Preference in CNN Image Classifiers." There are three subdirectories in this repository, the contents of which are described below. This code was tested using PyTorch 1.7 and the training script is adapted from the `torchvision` training script: https://github.com/pytorch/examples/blob/master/imagenet/main.py.
 
 ## Synthetic Pairs Matrix
 
