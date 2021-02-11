@@ -1,6 +1,8 @@
 # Signal Strength Drives Feature Preference in CNN Image Classifiers
 
-This repository contains code to run experiments in the paper "Feature Signal Drives Feature Preference in CNN Image Classifiers." There are three subdirectories in this repository, the contents of which are described below. This code was tested using PyTorch 1.7 and the training script is adapted from the `torchvision` training script: https://github.com/pytorch/examples/blob/master/imagenet/main.py.
+This repository contains code to run experiments in the paper "Feature Signal Drives Feature Preference in CNN Image Classifiers." There are three subdirectories in this repository, the contents of which are described below. This code was tested using PyTorch 1.7. 
+
+IMPORTANT NOTICE: if you would like to perform the texture bias experiments, you must first download the stimuli (silhouettes and style-transfer images) from https://github.com/rgeirhos/texture-vs-shape. Place the folders containing the silhouettes and style-transfer images into a folder called `stimuli` and place this folder in the texture_bias subdirectory.
 
 ## Synthetic Pairs Matrix
 
@@ -30,7 +32,7 @@ Predictivity
 ```
 python3 main.py --exp_name predictivity_(your predictivity here) --pattern_dir pairs_matrix1 --pred_drop blue --pred_drop_val (your predictivity here)
 ```
-When you run one of these experiments, datasets will be created and models trained. Datasets will get created and stored in the directory `./data/exp_name`, trained models will get stored in `./models/exp_name`, and results will appear in `./results/exp_name`. When the experiment is done, there should be a file called `master.csv` in the directory `./results/exp_name` which will contain information including each feature's average preference over the course of the experiment, pixel count, and name. A complete list of commands to generate all data in the paper can be found in the `commands.sh` file in the pairs_matrix_experiments subdirectory.
+When you run one of these experiments, datasets will be created and models trained. Datasets will get created and stored in the directory `./data/exp_name`, trained models will get stored in `./models/exp_name`, and results will appear in `./results/exp_name`. When the experiment is done, there should be a file called `master.csv` in the directory `./results/exp_name` which will contain information including each feature's average preference over the course of the experiment, pixel count, and name. A complete list of commands to generate all data in the paper can be found in the `commands.sh` file in the pairs_matrix_experiments subdirectory. The training script is adapted from the `torchvision` training script: https://github.com/pytorch/examples/blob/master/imagenet/main.py.
 
 ## Texture Bias
 
