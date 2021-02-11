@@ -68,6 +68,8 @@ Only full shapes masked with masked/interpolated background
 python main.py --only_complete --bg_interp (your interpolation here)
 ```
 
+A complete list of commands to generate all of the texture bias data from our paper can be found in the `commands.sh` file in the texture_bias subdirectory. 
+
 ## Excessive Invariance
 
 Running these experiments is a bit more involved. A complete list of commands you must run to reproduce all data and graphs found in the paper can be found in the `commands.sh` file in the excessive_invariance subdirectory. Comments in the file describe what each step represents.

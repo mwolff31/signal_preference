@@ -74,12 +74,8 @@ def run_shape_pref(args, model):
         img = resize(img, s)
         pad1 = (224-s)//2
         pad2 = pad1+(224-s)%2
-        if args.color=='white':
-          img = np.pad(img, ((pad1, pad2), (pad1, pad2), (0,0)),
-           'constant', constant_values=1)
-        if args.color=='black':
-          img = np.pad(img, ((pad1, pad2), (pad1, pad2), (0,0)),
-           'constant', constant_values=0)
+        img = np.pad(img, ((pad1, pad2), (pad1, pad2), (0,0)),
+         'constant', constant_values=1)
 
       # add random landscape to background
       if args.landscape:
