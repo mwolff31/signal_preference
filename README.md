@@ -1,4 +1,4 @@
-# Signal Strength Drives Feature Preference in CNN Image Classifiers
+# Signal Strength and Noise Drive Feature Preference in CNN Image Classifiers
 
 This repository contains code to run experiments in the paper "[Signal Strength and Noise Drive Feature Preference in CNN Image Classifiers](https://openreview.net/forum?id=CXQpLhjrTwJ)." There are three subdirectories in this repository, the contents of which are described below. This code was tested using PyTorch 1.7. 
 
