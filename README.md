@@ -2,7 +2,7 @@
 
 This repository contains code to run experiments in the paper "[Signal Strength and Noise Drive Feature Preference in CNN Image Classifiers](https://openreview.net/forum?id=CXQpLhjrTwJ)." There are three subdirectories in this repository, the contents of which are described below. This code was tested using PyTorch 1.7. 
 
-IMPORTANT NOTICE: if you would like to perform the texture bias experiments, you must first download the stimuli (silhouettes and style-transfer images) from https://github.com/rgeirhos/texture-vs-shape. Place the folders containing the silhouettes and style-transfer images into a folder called `stimuli` and place this folder in the texture_bias subdirectory.
+If you would like to perform the texture bias experiments, you must first download the stimuli (silhouettes and style-transfer images) from https://github.com/rgeirhos/texture-vs-shape. Place the folders containing the silhouettes and style-transfer images into a folder called `stimuli` and place this folder in the texture_bias subdirectory.
 
 ## Synthetic Pairs Matrix
 
